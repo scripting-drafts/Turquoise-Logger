@@ -27,7 +27,7 @@ class Logger:
         bold = "\033[1m"
         reset = "\033[0m"
         logging.basicConfig(filename='log_toast.log', encoding='UTF-8', level=logging.DEBUG, format='%(asctime)s [%(name)s] %(message)s')
-        logger = logging.getLogger('self.script_name')
+        logger = logging.getLogger(f'{self.script_name}')
         logger.setLevel(logging.DEBUG)
         ch = logging.StreamHandler()
         ch.setLevel(logging.DEBUG)
